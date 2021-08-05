@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!--internal CSS-->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-style: italic;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('im1.jfif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .flip-box {
+            background-color: transparent;
+            width: 300px;
+            height: 200px;
+            border: 1px solid #f1f1f1;
+            perspective: 1000px;
+            display: block;
+        }
+
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-box:hover .flip-box-inner {
+            transform: rotateX(180deg);
+        }
+
+        .flip-box-front, .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-box-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-box-back {
+            background-color: #555;
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .p2 {
+            left: 40px;
+            color: #ffffff;
+            background-color: #763131;
+            font-size: 50px;
+            margin-top: 15px
+        }
+    </style>
+</head>
+<body>
+    <nav style="background-color: #9fd823; display: inline-block">
+        <a href="portfolio.html">Home</a>
+    </nav><!--intro start-->
+    <p style="color: wheat">
+        <br><br>
+        Hello i am Shubham
+        <br><br>
+        currently i am pursuing my B.Tech degree from Chandigarh University
+        <br><br>
+        I have also Started Working as an intern in Cyber Group,Noida
+        <br><br>
+        You can check my educational qualifications and more on this page refer below :)
+    </p>
+    <div class="row">
+        <!--flip boxes start-->
+        <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="ten.png" alt="tenth" style="width:300px;height:200px">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Tenth Standard</h2>
+                        <p>Done from CBSE board got 9.8 CGPA :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="twelve.jpg" alt="tenth" style="width:300px;height:200px">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>12th Standard</h2>
+                        <p>Done from CBSE board got 90.4% :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="grad.jfif" alt="tenth" style="width:300px;height:200px">
+                    </div>
+                    <div class="flip-box-back">
+                        <h2>Graduation ;)</h2>
+                        <p>Doing from Chandigarh University Stuck at 8.13 CGPA ;)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <p class="p2">My hobbies</p><!--hobbies section start-->
+        <ul style="color: wheat">
+            <li>Listening to Music</li>
+            <li>Watching Movies</li>
+            <li>Reading Novels</li>
+        </ul>
+
+</body>
+</html>
