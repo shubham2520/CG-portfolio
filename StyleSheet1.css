@@ -7,7 +7,9 @@ h1 {
     text-align: center;
     font-style: italic;
 }
-
+h2{
+    color: wheat;
+}
 .image {
     float: right;
     position: absolute;
@@ -26,8 +28,8 @@ h1 {
 }
 
 #mainDiv {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
