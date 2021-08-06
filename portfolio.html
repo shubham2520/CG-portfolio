@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--External Stylesheets-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="StyleSheet1.css">
 </head>
@@ -21,136 +22,141 @@
         <li><a href="contact me.html">Contact Me</a></li>
         <li class="right"><a href="#pro">Projects</a></li>
     </ul>
-    <section class="first">
-        <img src="port.jpg" alt="My Pic" width="250" height="250" class="image"><!--My pic-->
-        <div id="02">
-            <h5> Hello , i am </h5>
-            <h2 id="sam" onload="typeWriter()"></h2>
-            <p>
-                <!--Initial intro-->
-                want to know more about me
-                <br><br>
-                here is my resume
-            </p>
-            <br>
-            <div class="btn">
-                <a href="resume.pdf" target="_blank" download>
-                    <!--download resume tag-->
-                    <button>Download</button>
+    <div class="col-s-12">
+        <section class="first">
+            <img src="port.jpg" alt="My Pic" width="250" height="250" class="image"><!--My pic-->
+            <div id="02">
+                <h5> Hello , i am </h5>
+                <h2 id="sam" onload="typeWriter()"></h2>
+                <p>
+                    <!--Initial intro-->
+                    want to know more about me
+                    <br><br>
+                    here is my resume
+                </p>
+                <br>
+                <div class="btn">
+                    <a href="resume.pdf" target="_blank" download>
+                        <!--download resume tag-->
+                        <button>Download</button>
 
-                </a>
+                    </a>
+                </div>
             </div>
+        </section></div>
+
+        <div class="col-s-12">
+            <p class="p2">My Skill Set</p><!--Skill section start-->
+            <section class="f1">
+                <div>
+                    <!--Using tables to display my skill list-->
+                    <table cellpadding="8" cellspacing="12">
+                        <tr>
+                            <td>
+                                <font size="6" color="gray">
+                                    Languages
+                                </font>
+                            </td>
+                            <td>
+                                <font size="6" color="gray">
+                                    Proficiency
+                                </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <b>C++</b>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <b>Intermediate</b>
+
+                                </dl>
+                            </td>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <b>JAVA</b>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <b>Intermediate</b>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <b>SQL,Python</b>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <b>Beginner</b>
+                                </dl>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <dl>
+                                    <b>HTML,CSS</b>
+                                </dl>
+                            </td>
+                            <td>
+                                <dl>
+                                    <b>Intermediate</b>
+                                </dl>
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+            </section>
         </div>
-    </section>
+        <!--skill set section ends-->
+        <div class="col-s-12">
+            <p class="p2" id="pro">My Projects</p><!--project section start-->
 
-    <p class="p2">My Skill Set</p><!--Skill section start-->
-    <section class="f1">
-        <div>
-            <!--Using tables to display my skill list-->
-            <table cellpadding="8" cellspacing="12">
-                <tr>
-                    <td>
-                        <font size="6" color="gray">
-                            Languages
-                        </font>
-                    </td>
-                    <td>
-                        <font size="6" color="gray">
-                            Proficiency
-                        </font>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <dl>
-                            <b>C++</b>
-                        </dl>
-                    </td>
-                    <td>
-                        <dl>
-                            <b>Intermediate</b>
+            <div class="row">
+                <div class="column">
+                    <a href="website.html"><img src="website.jfif" style="width:100%"></a>
+                </div>
+                <div class="column">
+                    <a href="software.html"><img src="software.jpg" style="width:100%"></a>
+                </div>
+                <div class="column">
+                    <a href="app.html"><img src="app1.jpg" style="width:100%" height="200"></a>
+                </div>
+            </div>
 
-                        </dl>
-                    </td>
-                <tr>
-                    <td>
-                        <dl>
-                            <b>JAVA</b>
-                        </dl>
-                    </td>
-                    <td>
-                        <dl>
-                            <b>Intermediate</b>
-                        </dl>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <dl>
-                            <b>SQL,Python</b>
-                        </dl>
-                    </td>
-                    <td>
-                        <dl>
-                            <b>Beginner</b>
-                        </dl>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <dl>
-                            <b>HTML,CSS</b>
-                        </dl>
-                    </td>
-                    <td>
-                        <dl>
-                            <b>Intermediate</b>
-                        </dl>
-                    </td>
-                </tr>
-
-            </table>
         </div>
-    </section>
-    <!--skill set section ends-->
-
-    <p class="p2" id="pro">My Projects</p><!--project section start-->
-
-    <div class="row">
-        <div class="column">
-            <a href="website.html"><img src="website.jfif" style="width:100%"></a>
+        <div class="col-s-12" id="04">
+            <p class="p2">Social Links</p><!---last section of website-->
+            <footer style="padding-bottom: 30px">
+                <a href="https://m.facebook.com/?soft=bookmarks" class="fa fa-facebook"></a>
+                <a href="https://mobile.twitter.com/home" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/mwlite/in/shubham-singh-6b90771a0" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/shubham.5452/" class="fa fa-instagram"></a>
+            </footer>
         </div>
-        <div class="column">
-            <a href="software.html"><img src="software.jpg" style="width:100%"></a>
-        </div>
-        <div class="column">
-            <a href="app.html"><img src="app1.jpg" style="width:100%" height="200"></a>
-        </div>
-    </div>
+        <script>
+            var i = 0;
+            var txt = 'Shubham';
+            var speed = 50;
 
+            window.onload = function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("sam").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                }
+            };
 
-    <p class="p2">Social Links</p><!---last section of website-->
-    <footer style="padding-bottom: 30px">
-        <a href="https://m.facebook.com/?soft=bookmarks" class="fa fa-facebook"></a>
-        <a href="https://mobile.twitter.com/home" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/mwlite/in/shubham-singh-6b90771a0" class="fa fa-linkedin"></a>
-        <a href="https://www.instagram.com/shubham.5452/" class="fa fa-instagram"></a>
-    </footer>
-    <script>
-        var i = 0;
-        var txt = 'Shubham';
-        var speed = 50;
-
-        window.onload = function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("sam").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        };
-
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
 </body>
 </html>
