@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--External Stylesheets-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="StyleSheet1.css">
 </head>
@@ -21,26 +23,29 @@
     </ul>
     <section class="first">
         <img src="port.jpg" alt="My Pic" width="250" height="250" class="image"><!--My pic-->
-        <h5> Hello , i am </h5>
-        <h2 id="sam" onload="typeWriter()"></h2>
-        <p id="01">
-            <!--Initial intro-->
-            want to know more about me
-            <br><br>
-            here is my resume
-        </p>
-        <br>
-        <div class="btn">
-            <a href="resume.pdf" target="_blank" download>
-                <!--download resume tag-->
-                <button>Download</button>
+        <div id="02">
+            <h5> Hello , i am </h5>
+            <h2 id="sam" onload="typeWriter()"></h2>
+            <p>
+                <!--Initial intro-->
+                want to know more about me
+                <br><br>
+                here is my resume
+            </p>
+            <br>
+            <div class="btn">
+                <a href="resume.pdf" target="_blank" download>
+                    <!--download resume tag-->
+                    <button>Download</button>
 
-            </a>
+                </a>
+            </div>
         </div>
     </section>
-    <div>
-        <p class="p2">My Skill Set</p><!--Skill section start-->
-        <center>
+
+    <p class="p2">My Skill Set</p><!--Skill section start-->
+    <section class="f1">
+        <div>
             <!--Using tables to display my skill list-->
             <table cellpadding="8" cellspacing="12">
                 <tr>
@@ -105,9 +110,12 @@
                 </tr>
 
             </table>
-        </center>
-    </div><!--skill set section ends-->
+        </div>
+    </section>
+    <!--skill set section ends-->
+
     <p class="p2" id="pro">My Projects</p><!--project section start-->
+
     <div class="row">
         <div class="column">
             <a href="website.html"><img src="website.jfif" style="width:100%"></a>
@@ -116,11 +124,13 @@
             <a href="software.html"><img src="software.jpg" style="width:100%"></a>
         </div>
         <div class="column">
-            <a href="app.html"><img src="app.jfif" style="width:100%" height="250"></a>
+            <a href="app.html"><img src="app1.jpg" style="width:100%" height="200"></a>
         </div>
     </div>
+
+
     <p class="p2">Social Links</p><!---last section of website-->
-    <footer>
+    <footer style="padding-bottom: 30px">
         <a href="https://m.facebook.com/?soft=bookmarks" class="fa fa-facebook"></a>
         <a href="https://mobile.twitter.com/home" class="fa fa-twitter"></a>
         <a href="https://www.linkedin.com/mwlite/in/shubham-singh-6b90771a0" class="fa fa-linkedin"></a>
@@ -138,6 +148,9 @@
                 setTimeout(typeWriter, speed);
             }
         };
+
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -7,29 +7,36 @@ h1 {
     text-align: center;
     font-style: italic;
 }
-h2{
+
+h2 {
     color: wheat;
 }
+
 .image {
-   position: absolute;
-   left: 60rem;
-   top: 55px;
+    position: absolute;
+    left: 60.6rem;
+    bottom: 10.8rem;
     border: 2px solid orange;
     background-color: transparent;
     border-radius: 70%;
 }
+
 #sam {
     font-family: 'Quicksand', sans-serif;
     margin: 0rem;
 }
 
+#03 {
+    background-color: aqua;
+}
+
 table, th, td {
-    color: green;
-    border: 0.5rem solid blue;
+    color: wheat;
+    border: 0.5rem solid;
     padding: 0.5rem;
     margin: 0.5px;
-    text-align: left;
     font-style: italic;
+    border-collapse: collapse;
 }
 
 .first {
@@ -37,19 +44,23 @@ table, th, td {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     font-style: italic;
     color: white;
-    position: relative;
     font-size: 25px;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
+.f1 {
+    font-style: italic;
+    font-size: 25px;
+    background-image: url('2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 ul.topnav {
     list-style-type: none;
@@ -157,11 +168,9 @@ ul.topnav {
     color: white;
 }
 
-#01 {
+#02 {
     position: relative;
-    top: 6rem;
-    left: 10rem;
-    padding: 1rem;
+    left: 20px;
     color: white;
     font-size: 2rem;
     font-style: italic;
@@ -184,6 +193,7 @@ ul.topnav {
     font-style: italic;
     transition: transform 2s;
 }
+
     .column:hover {
         transform: rotate(360deg)
     }
@@ -203,13 +213,16 @@ ul.topnav {
         opacity: 1;
     }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    font-style: italic;
+.row {
+    background-color: aqua;
 }
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        font-style: italic;
+    }
 
 /* The expanding image container */
 .container {
