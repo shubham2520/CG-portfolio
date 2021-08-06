@@ -11,29 +11,16 @@ h2{
     color: wheat;
 }
 .image {
-    float: right;
-    position: absolute;
-    margin: 3rem;
-    padding: 3px;
-    right: 4.6rem;
-    bottom: 7.6rem;
+   position: absolute;
+   left: 60rem;
+   top: 55px;
     border: 2px solid orange;
     background-color: transparent;
     border-radius: 70%;
 }
-
 #sam {
     font-family: 'Quicksand', sans-serif;
     margin: 0rem;
-}
-
-#mainDiv {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 table, th, td {
@@ -50,17 +37,19 @@ table, th, td {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     font-style: italic;
-}
-
-.sum {
     color: white;
     position: relative;
-    left: 10rem;
     font-size: 25px;
-    font-style: italic;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
+
 
 ul.topnav {
     list-style-type: none;
@@ -193,17 +182,12 @@ ul.topnav {
     position: relative;
     left: 10rem;
     font-style: italic;
-}
-
-.rotatingimg {
     transition: transform 2s;
 }
-
-    .rotatingimg:hover {
+    .column:hover {
         transform: rotate(360deg)
     }
 
-;
 #sl {
     color: #37c2e1;
     font-style: italic;
